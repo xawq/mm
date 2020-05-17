@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>{{number1}}</p>
+    <button @click="fdsa">dsaf</button>
+    <img :src="xyP"/>
+    <model1></model1>
+</div>
+
+<template id="model12">
+    <div>
+    <p>dsafdsaf</p>
+    <h1>dsafdsaf</h1>
+    </div>
+</template>
+<script>
+   new Vue({
+       el:'#app',
+       data:{
+           message:"dsafdsaf",
+           number1:'0',
+
+           xyP:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589471397475&di=aa963220de90048e3d07fe2f3b16710b&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201502%2F08%2F20150208115519_kvMdL.jpeg'
+       },
+       methods:{
+           fdsa: function () {
+               console.log("dsafdsaf"),
+               this.number1++
+
+           }
+       },
+       components:{
+           'model1':{template:'#model12'}
+       }
+
+
+
+   })
+</script>
+</body>
+</html>
